@@ -16,6 +16,51 @@ Text Domain: sakurairo
 Tags: 多彩、轻松上手、体验完善、高自定义度
 */
 
+
+/*************************************************************/
+/**********针对腐草一刹添加**********/
+/*
+@font-face{
+font-family: 'kuzhan-happy'
+src: url('https://www.fcyc.top/wp-content/themes/Sakurairo/lsc/font/kuaile.eot');
+src:
+url('https://www.fcyc.top/wp-content/themes/Sakurairo/lsc/font/kuaile.eot') format('embeded-opentype'),
+url('https://www.fcyc.top/wp-content/themes/Sakurairo/lsc/font/kuaile.woff') format('woff'),
+url('https://www.fcyc.top/wp-content/themes/Sakurairo/lsc/font/kuaile.ttf') format('truetype'),
+url('https://www.fcyc.top/wp-content/themes/Sakurairo/lsc/font/kuaile.svg') format('svg');
+font-style: normal;
+font-weight: normal;
+*:not([class*="icon"]):not(i){
+  font-family: 'kuzhan-happy' !important;
+}
+}
+*/
+
+@font-face {
+    font-family: "zhanku";
+    src: url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.eot"); /* IE9 */
+    src: url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.woff") format("woff"), /* chrome、firefox */
+    url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.svg#zhanku") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+.chinese-font{
+  font-family:'kuzhan-happy','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
+}
+
+@media (max-width:860){
+.serif{
+  font-family:'kuzhan-happy','Merriweather Sans',Helvetica,Tahoma,Arial,'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif
+}
+}
+
+
+/*************************************************************/
+
+
 .headertop {
   animation: blur .8s;
   position: relative;
@@ -122,7 +167,7 @@ Tags: 多彩、轻松上手、体验完善、高自定义度
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'zhanku', sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   overflow-x: hidden;
@@ -212,7 +257,7 @@ pre {
   font-size: 1em;
   background: rgba(255, 255, 255, .5);
   border-radius: 10px;
-  font: 15px/22px 'Fira Code', 'Noto Sans SC';
+  font: 15px/22px 'zhanku', 'Fira Code', 'Noto Sans SC';
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -2671,7 +2716,7 @@ h1.main-title {
 
 .header-info p {
   margin: 0;
-  font-family: 'Noto Serif SC';
+  font-family: 'zhanku', 'Noto Serif SC';
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -3832,7 +3877,7 @@ input[type=radio]:checked:before {
   width: auto;
   height: auto;
   z-index: 99;
-  font-family: 'Noto Sans SC';
+  font-family: 'zhanku', 'Noto Sans SC';
   padding: 10px 20px;
   transition-property: right;
   transition-duration: .3s, .3s;
@@ -3873,7 +3918,7 @@ input[type=radio]:checked:before {
 
 .center-text {
   margin: auto;
-  font-family: 'Noto Sans SC';
+  font-family: 'zhanku', 'Noto Sans SC';
   font-size: 80px;
   text-transform: none;
   font-weight: var(--global-font-weight);
@@ -4505,7 +4550,7 @@ input[type=radio]:checked:before {
   background: #1d1f21;
   color: #fff;
   word-break: break-word;
-  font-family: 'Fira Code', 'Noto Sans SC';
+  font-family: 'zhanku', 'Fira Code', 'Noto Sans SC';
   padding: 2px;
   text-shadow: none;
   border-radius: 0 0 5px 5px;
@@ -4556,7 +4601,7 @@ td.hljs-ln-numbers {
   text-align: center;
   color: #888f96;
   background: #1d1f21;
-  font-family: 'Fira Code', 'Noto Sans SC';
+  font-family: 'zhanku', 'Fira Code', 'Noto Sans SC';
   vertical-align: top;
   position: absolute;
   left: 0;
@@ -4701,7 +4746,7 @@ td.hljs-ln-numbers {
   line-height: 1.4;
   word-wrap: normal;
   word-break: break-all;
-  font-family: 'Noto Serif SC';
+  font-family: 'zhanku', 'Noto Serif SC';
   font-style: italic;
   padding: 0.1em 0.7em 0.4em 2.1em;
   flex: 1;
@@ -4750,7 +4795,7 @@ td.hljs-ln-numbers {
 
 .aplayer {
   background: rgba(255, 255, 255, .3);
-  font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif;
+  font-family: 'zhanku', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif;
   box-shadow: 0 0 0 1px #eee;
   border-radius: 3px;
   margin: 15px 0;
@@ -7203,6 +7248,7 @@ a.toc-link {
   width: 100%;
   height: auto;
   margin-top: 55px;
+  font-family: 'zhanku', Noto Serif SC;
   white-space: nowrap;
 }
 
@@ -7330,12 +7376,13 @@ a.toc-link {
 
 .Ubuntu-font,
 .control-btn-sans-serif {
-  font-family: 'Noto Sans SC';
+  font-family: 'zhanku', 'Noto Sans SC';
 }
 
 .serif,
 .control-btn-serif {
-  font-family: 'Noto Serif SC';
+  /*font-family: 'Noto Serif SC';*/
+  font-family:'zhanku','Noto Serif SC','Source Han Serif SC','Source Han Serif',source-han-serif-sc,'PT Serif','SongTi SC','MicroSoft Yahei',Georgia,serif
 }
 
 .menu-list li:hover,
@@ -9904,7 +9951,7 @@ animation: slow-rotate 10s linear infinite;
   background: var(--inline_code_background_color, #F2F1F1);
   color: var(--theme-skin-matching, #F9D938);
   word-break: break-word;
-  font-family: 'Noto Sans SC';
+  font-family: 'zhanku', 'Noto Sans SC';
   padding: 0px 3px 0px 3px;
   text-shadow: none;
   border-radius: 5px;
@@ -10731,7 +10778,7 @@ body.dark .entry-content code:not(pre code) {
 
 .aplayer {
   background: rgba(255, 255, 255, .3);
-  font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif
+  font-family: 'zhanku', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', 'source-han-serif-sc', 'PT Serif', 'SongTi SC', 'MicroSoft Yahei', Georgia, serif
 }
 
 .aplayer .aplayer-lrc::before {

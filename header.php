@@ -102,7 +102,11 @@ $vision_resource_basepath = iro_opt('vision_resource_basepath');
 		</div>
 	<?php endif; ?>
 	<div class="scrollbar" id="bar"></div>
+	<?php if(is_front_page()){?>
+	<header class="site-header no-select is-homepage" role="banner">
+	<?php }else{ ?>
 	<header class="site-header no-select" role="banner">
+	<?php } ?>
 		<div class="site-top">
 			<div class="site-branding">
 				<?php if (iro_opt('iro_logo') && !iro_opt('mashiro_logo_option', false)) { ?>
